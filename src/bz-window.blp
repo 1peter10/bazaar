@@ -5,7 +5,7 @@ template $BzWindow: Adw.ApplicationWindow {
   title: _("Bazaar");
   default-width: 1220;
   default-height: 900;
-  width-request: 700;
+  width-request: 360;
   height-request: 400;
 
   ShortcutController {
@@ -29,7 +29,7 @@ template $BzWindow: Adw.ApplicationWindow {
 
   content: $BzCometOverlay comet_overlay {
     child: Adw.BreakpointBin breakpoint_bin {
-      width-request: 550;
+      width-request: 360;
       height-request: 450;
 
       child: Adw.ToolbarView toolbar_view {
@@ -65,7 +65,7 @@ template $BzWindow: Adw.ApplicationWindow {
                 bottom-bar-style: flat;
 
                 content: ScrolledWindow transactions {
-                  width-request: 500;
+                  width-request: 300;
                   hscrollbar-policy: never;
                   propagate-natural-height: true;
 
